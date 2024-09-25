@@ -18,7 +18,7 @@ def login():
 		open("token.txt", "w").write(find_token.group(1))
 		open("cookie.txt", "w").write(cookie)
 		to = open("token.txt","r").read()
-		print("\ntoken : "+to);time.sleep(5)
+		print("\nToken : "+to);time.sleep(5)
 		bot()
 	except:
 		os.system("rm token.txt ")
